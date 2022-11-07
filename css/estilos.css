@@ -7,6 +7,25 @@ body {
     background-size: cover;
 }
 
+#contenedor-superior {
+    background-color: #315275;
+    height: 60px;
+    border-bottom-right-radius: 12px;
+}
+
+.linea-degrade {
+    background: linear-gradient(90deg, #315275 40%, #509999);
+    /*background-color: blueviolet;*/
+    height: 12px;
+}
+
+.logo-utadeo {
+    background-color: #2986e9;
+}
+
+.boton-basico {
+    background-color: #509999;
+}
 
 /*Media Query Paginas Responsive*/
 
