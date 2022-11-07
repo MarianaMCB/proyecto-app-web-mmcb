@@ -1,9 +1,21 @@
+/*Estilos App Web*/
+
+body {
+    padding:0%;
+    margin:0%;
+    background-image: url(/img/pattern-fondo-web.png);
+    background-size: cover;
+}
+
+
 /*Media Query Paginas Responsive*/
 
 /*Tamaño: Dispositivos extra pequeños*/
 @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
+      background-size: cover;
+      background-repeat: repeat;
     }
   }
 
@@ -11,6 +23,8 @@
 @media only screen and (min-width: 600px) {
     body {
       background-color: rgb(173, 230, 181);
+      background-size: 50%;
+      background-repeat: repeat;
     }
   }
 
@@ -18,19 +32,25 @@
 @media only screen and (min-width: 768px) {
     body {
       background-color: rgb(226, 230, 173);
+      background-size: 33.33%;
+      background-repeat: repeat;
     }
   }
 
 /*Tamaño: Dispositivos Grandes*/
 @media only screen and (min-width: 992px) {
     body {
-      background-color: rgb(230, 210, 173);
+      background-color: rgb(226, 179, 107);
+      background-size: 33.33%;
+      background-repeat: repeat;
     }
   }
 
 /*Tamaño: Dispositivos Extra Grandes*/
 @media only screen and (min-width: 1200px) {
     body {
-      background-color: rgb(230, 210, 173);
+      background-color: rgb(230, 173, 206);
+      background-size: 33.33%;
+      background-repeat: repeat;
     }
   }
