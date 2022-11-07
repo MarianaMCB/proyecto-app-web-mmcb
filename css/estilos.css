@@ -1,0 +1,36 @@
+/*Media Query Paginas Responsive*/
+
+/*Tamaño: Dispositivos extra pequeños*/
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  /*Tamaño: Dispositivos pequeños*/
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: rgb(173, 230, 181);
+    }
+  }
+
+  /*Tamaño: Dispositivos Medianos*/
+@media only screen and (min-width: 768px) {
+    body {
+      background-color: rgb(226, 230, 173);
+    }
+  }
+
+/*Tamaño: Dispositivos Grandes*/
+@media only screen and (min-width: 992px) {
+    body {
+      background-color: rgb(230, 210, 173);
+    }
+  }
+
+/*Tamaño: Dispositivos Extra Grandes*/
+@media only screen and (min-width: 1200px) {
+    body {
+      background-color: rgb(230, 210, 173);
+    }
+  }
