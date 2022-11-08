@@ -27,24 +27,46 @@ body {
   position: absolute;
 }
 
+.linea-degrade-dos {
+  background: linear-gradient(90deg, #509999, #315275 40%, #509999);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  height: 12px;
+  position: absolute;
+}
+
 .logo img {
   width: 260px;
   height: 55px;
+}
+.logo-utadeo {
+  width: 260px;
+  height: 55px;
+  margin-top: 10px;
 }
 
 header nav ul li {
   list-style: none;
   display: inline-block;
-  padding: 20px;
-}
-header nav ul li a {
-  text-decoration: none;
+  margin-top: 30px;
 }
 
-.contenedor-logo {
-  background-color: #9bbee4;
-  padding: 20px;
+header nav ul li a {
+  background-color: #509999;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 60px;
 }
+
+.logo {
+  background-color: #315275;
+  width: 260px;
+  height: 55px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
 
 /*Botones*/
 
@@ -54,22 +76,110 @@ header nav ul li a {
   text-transform: uppercase;
 }
 
+.contenedor-boton {
+  background-color: #5f9950;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  border-radius: 12px;
+  vertical-align: middle;
+}
+
 .boton-basico {
-  background-color: #509999;
   width: 147px;
   height: 50px;
   color: #F9F8F3;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
+  vertical-align: middle;
 }
 
 
-/*Media Query Paginas Responsive*/
+
+/*-----------------------Footer-----------------------*/
+footer {
+  margin-top: 100px;
+  background-color: #315275;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  color: #F9F8F3;
+}
+
+.box {
+  padding: 40px;
+}
+
+.box-especial{
+  padding: 70px 50px;
+  text-align: center;
+}
+
+#footer-derechos {
+  width: 100%;
+  text-align: center;
+}
+
+footer .grupo-1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 0px;
+}
+
+footer .grupo-2 {
+  background: linear-gradient(90deg, #509999, #315275 40%, #509999);
+  text-align: center;
+}
+
+.box h3{
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.lista, .texto-h4 {
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.texto-h4-opcion {
+  color: #f9f8f3ce;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.caja-redes-sociales {
+  margin-top: 30px;
+}
+
+.caja-redes-sociales a{
+  color: #F9F8F3;
+  padding: 10px;
+}
+
+.caja-redes-sociales a:hover{
+  color: #509999;
+}
+
+
+
+/*-----------------------Media Query Paginas Responsive-----------------------*/
 
 /*Tamaño: Dispositivos extra pequeños*/
 @media only screen and (max-width: 600px) {
-  
+
     header {
       flex-direction: column;
     }
@@ -78,6 +188,13 @@ header nav ul li a {
       background-color: lightblue;
       background-size: cover;
       background-repeat: repeat;
+    }
+
+    footer .grupo-1 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px 0px;
     }
   }
 
@@ -98,6 +215,7 @@ header nav ul li a {
       background-size: 33.33%;
       background-repeat: repeat;
     }
+
   }
 
 /*Tamaño: Dispositivos Grandes*/
