@@ -9,7 +9,7 @@ export function showMessage(message, type = "success") {
         position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-        background: type === "success" ? "#5f9950" : "#b14040",
+        background: type === "success" ? "#5f9950" : "#ad2c37",
         },
         onClick: function(){} // Callback after click
     }).showToast();
