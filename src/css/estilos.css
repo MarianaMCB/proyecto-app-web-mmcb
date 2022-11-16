@@ -54,11 +54,14 @@ header nav ul li {
   display: inline-block;
   margin-top: 30px;
 }
+
 header nav ul li a {
-  background-color: #509999;
   text-decoration: none;
   text-align: center;
-  padding: 20px 60px;
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 10px 60px;
 }
 
 .logo {
@@ -73,6 +76,28 @@ header nav ul li a {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+}
+.menu-vertical {
+  position: absolute;
+  display: none;
+  justify-content:flex-start;
+  list-style: none;
+  color: #F9F8F3;
+  padding: 0px;
+}
+
+.menu-vertical li a {
+  display: flex;
+  margin: auto;
+}
+
+.menu-vertical li {
+  margin: 1px;
+}
+
+.contenedor-opciones-nav li:hover .menu-vertical {
+  display: block;
+  margin-top: 24px;
 }
 
 
@@ -396,7 +421,7 @@ footer .grupo-2 {
   color: #F9F8F3;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  padding: 18px 30px 23px 34px;
+  padding: 18px 34px 23px 40px;
   padding-bottom: 23px;
   margin: 0px 24px 0 18px;
 }
@@ -412,7 +437,7 @@ footer .grupo-2 {
   color: #F9F8F3;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  padding: 18px 30px 23px 34px;
+  padding: 18px 34px 23px 40px;
   padding-bottom: 23px;
   margin: 0px 24px 0 18px;
 }
@@ -469,6 +494,7 @@ footer .grupo-2 {
   padding: 12px 16px;
   box-shadow: #37462C -4px 5px 0px, -7px 9px 3px #23282c91;
 }
+
 .fichaAzulCuenta:hover::before {
   content:"";
   display:block;
@@ -481,6 +507,102 @@ footer .grupo-2 {
   left: -15px;
   box-shadow: #37462C -4px 5px 0px, -7px 9px 4px #23282c91;
 }
+
+/*Botones desplegables*/
+
+.boton-azul-centroconsulta {
+  background-color: transparent;
+  background-image: url(/src/img/boton-azul-centroc.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 14px 24px 26px 24px;
+  margin: 0px 0px 0px 0px;
+}
+
+.boton-azul-centroconsulta:hover {
+  background-color: transparent;
+  background-image: url(/src/img/boton-verde-centroconsulta.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 14px 24px 26px 24px;
+  margin: 0px 0px 0px 0px;
+}
+
+.menu-vertical li .boton-azul-formularios{
+  margin-left: 20px;
+  display: flex;
+}
+
+
+.boton-azul-formularios {
+  display: flex;
+  background-color: transparent;
+  background-image: url(/src/img/boton-azul-formulario-desplegable.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 14px 24px 18px 24px;
+  margin: 0px;
+  margin-left: 50px;
+}
+
+.boton-azul-formularios:hover {
+  display: flex;
+  background-color: transparent;
+  background-image: url(/src/img/boton-verde-formularios.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 14px 24px 18px 24px;
+  margin: 0px;
+  margin-left: 50px;
+}
+
+.menu-vertical li .boton-azul-foros{
+  margin-left: 8px;
+  display: flex;
+}
+
+.boton-azul-foros {
+  background-color: transparent;
+  background-image: url(/src/img/boton-azul-foros.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 26px 24px 17px 24px;
+  margin: 0px 0px 0px 0px;
+}
+
+.boton-azul-foros:hover {
+  background-color: transparent;
+  background-image: url(/src/img/boton-verde-foros.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 26px 24px 17px 24px;
+  margin: 0px 0px 0px 0px;
+}
+
 
 /*------------------------------------------Registro------------------------------------------*/
 
