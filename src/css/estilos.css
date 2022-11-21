@@ -96,9 +96,34 @@ header nav ul li a {
   margin: 1px;
 }
 
+.menu-vertical-dos {
+  position: absolute;
+  display: none;
+  justify-content:flex-start;
+  list-style: none;
+  color: #F9F8F3;
+  padding: 0px;
+}
+
+.menu-vertical-dos li a {
+  display: flex;
+  margin: auto;
+}
+
+.menu-vertical-dos li {
+  margin: 1px;
+}
+
+
 .contenedor-opciones-nav li:hover .menu-vertical {
   display: block;
   margin-top: 24px;
+}
+
+
+.contenedor-opciones-nav li:hover .menu-vertical-dos {
+  display: block;
+  margin-top: 20px;
 }
 
 
@@ -613,6 +638,38 @@ footer .grupo-2 {
   margin: 0px 0px 0px 0px;
 }
 
+.menu-vertical li .boton-azul-cerrar{
+  margin-left: 8px;
+  display: flex;
+}
+
+.boton-azul-cerrar {
+  background-color: transparent;
+  background-image: url(/src/img/boton-azul-centroc.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 0px 50px 26px 24px;
+  margin: 0px 0px 0px 0px;
+  margin-left: -80px;
+}
+
+.boton-azul-cerrar:hover {
+  background-color: transparent;
+  background-image: url(/src/img/boton-verde-centroconsulta.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  color: #F9F8F3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 14px 24px 26px 24px;
+  margin: 0px 0px 0px 0px;
+}
+
 /*Sección*/
 .servicios {
   background-color: #315275;
@@ -653,6 +710,9 @@ section .grupo-1 {
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
 }
+
+/*------------------------------------------Centro Consulta------------------------------------------*/
+
 
 /*-----------------------Media Query Paginas Responsive-----------------------*/
 

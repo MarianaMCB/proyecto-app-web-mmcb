@@ -9,6 +9,7 @@
             <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
             <link rel="stylesheet" href="css/estilos.css">
             <script src="./main.js" type="module"></script>
+            <script src="./subirArchivos.js"></script>
             <title>Inicio App Web</title>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,7 @@
                         <li><a href="forointeractivo.html" class="boton-azul-foros">FORO INTERACTIVO</a></li>
                     </ul>
                 </li>
-                <li><a class="fichaAzulCuenta">CUENTA</a>
+                <li><a href="iniciosesion.html" class="fichaAzulCuenta" id="logout">CERRAR S.</a>
                     <ul>
                         <!--<li><a class="fichaVerde" id="logout">CERRAR SESIÓN</a></li>-->
                     </ul>
@@ -43,24 +44,14 @@
             </nav>
         </header>
         <section class="servicios">
-            <h1 class="titulo-principal">Servicios Disponibles</h1>
-            <div class="grupo-1">
-                <div class="box-servicios">
-                    <img src="./img/sevicios-centro-consulta-inicio.png" alt="sevicios-centro-consulta-inicio">
-                    <h2>Centro de Consulta</h2>
-                    <a href="./centroconsulta.html" class="fichaVerde">Visitar</a>
-                </div>
-                <div class="box-servicios">
-                    <img src="./img/sevicios-formularios-inicio.png" alt="sevicios-formularios-inicio">
-                    <h2>Formularios</h2>
-                    <a href="./formularios.html" class="fichaVerde">Visitar</a>
-                </div>
-                <div class="box-servicios">
-                    <img src="./img/sevicios-foros-inicio.png" alt="">
-                    <h2>Foro Interactivo</h2>
-                    <a href="./forointeractivo.html" class="fichaVerde">Visitar</a>
-                </div>
+            <h1 class="titulo-principal">Subir Archivos</h1>
+            <div class="drag-area">
+                <h2>Arrastra y suelta los documentos</h2>
+                <span>0</span>
+                <button>Seleccionar archivos</button>
+                <input type="file" name="" id="input-file" hidden multiple />
             </div>
+            <div id="preview"></div>
         </section>
         <footer>
             <div class="linea-degrade-dos"></div>
