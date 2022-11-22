@@ -40,7 +40,7 @@ submitData.addEventListener('click', (e) => {
                 .then(() => {
                     // Data saved successfully!
                     showMessage("Usuario creado exitosamente");
-                    window.location.assign("index.html")
+                    window.location.assign("iniciosesion.html")
                 })
                 .catch((error) => {
                     // The write failed...
