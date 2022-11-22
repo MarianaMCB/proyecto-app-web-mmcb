@@ -15,6 +15,7 @@ signInForm.addEventListener('submit', async e => {
         console.log(credentials)
 
         showMessage('Bienvenido ' + credentials.user.email)
+        //window.location.assign("index.html")
 
     } catch (error) {
         if (error.code === 'auth/wrong-password') {
