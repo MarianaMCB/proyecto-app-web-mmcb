@@ -713,6 +713,105 @@ section .grupo-1 {
 
 /*------------------------------------------Centro Consulta------------------------------------------*/
 
+.archivos {
+  background-color: #315275;
+  margin: 10% 0px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  padding-bottom: 50px;
+}
+
+.drop-area {
+  border: 5px dashed #F9F8F3;
+  height: 500px;
+  width: 700px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.drop-area.active {
+  background-color: #509999;
+  color: #23282C;
+  border: 2px dashed #F9F8F3;
+}
+
+.drop-area h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #F9F8F3;
+  font-weight: 300;
+}
+
+.drop-area span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #F9F8F3;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.drop-area button {
+  position: relative;
+  background: none;
+  border: none;
+  background-color: #5f9950;
+  color: #F9F8F3;
+  border-radius: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 12px 16px;
+  box-shadow: #37462C -4px 5px 0px, -7px 9px 3px #23282c91;
+  margin: 10px;
+}
+
+.drop-area button:hover {
+  position: relative;
+  background: none;
+  border: none;
+  background-color: #509999;
+  color: #F9F8F3;
+  border-radius: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 12px 16px;
+  box-shadow: #1D3045 -4px 5px 0px, -7px 9px 3px #23282c91;
+  margin: 10px;
+}
+
+.file-container {
+  display: flex;
+  align-items: center;
+  gap: 10x;
+  padding: 10px;
+  border: solid 1px #F9F8F3;
+}
+
+#preview {
+  margin-top: 10px;
+}
+
+.status-text {
+  padding: 0 10px;
+}
+
+.sucess {
+  color: #5f9950;
+}
+
+.failure {
+  color: #8f3237;
+}
+
+
 
 /*-----------------------Media Query Paginas Responsive-----------------------*/
 

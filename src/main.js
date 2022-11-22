@@ -3,9 +3,9 @@ import { getDocs, collection } from "https://www.gstatic.com/firebasejs/9.14.0/f
 import { auth, db } from './app/firebase.js'
 import { loginCheck } from "./app/loginCheck.js"
 
-import './app/signupForm.js'
-import './app/signinForm.js'
-import './app/logout.js'
+//import './app/signupForm.js'
+//import './app/signinForm.js'
+//import './app/logout.js'
 
 auth.onAuthStateChanged(user =>{
     if (user) {
